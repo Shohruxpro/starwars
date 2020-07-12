@@ -1,0 +1,26 @@
+.info {
+  width: 53%;
+  font-size: 1.8rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
+
+  &__text {
+    color: $color-secondary;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+      letter-spacing: 1px;
+      background-color: rgba($color: $color-background, $alpha: 0.5);
+      padding: 1rem;
+    }
+  }
+  &__premier {
+    color: $color-premier;
+    margin-top: 2.5rem;
+  }
+  &__date {
+    font-size: 2.4rem;
+  }
+}

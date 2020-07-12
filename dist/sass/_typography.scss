@@ -1,0 +1,23 @@
+%heading {
+  font-weight: 900;
+  font-family: $font-display;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem; //6px
+  }
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 3rem;
+}
+
+.main__text {
+  color: $color-secondary;
+  width: 50%;
+  font-size: 1.8rem;
+}

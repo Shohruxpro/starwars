@@ -1,0 +1,89 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-largest) {
+    flex-wrap: wrap;
+  }
+  @media only screen and (max-width: $bp-large) {
+    justify-content: space-around;
+  }
+}
+.card {
+  width: 25rem;
+  height: 20rem;
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 3rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  flex: 0 0 23%;
+
+  @media only screen and (max-width: $bp-largest) {
+    height: auto;
+    width: auto;
+  }
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 34%;
+    margin-top: 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    flex: 0 0 51%;
+    margin-top: 2rem;
+  }
+
+  &--1 {
+    background-image: linear-gradient($color-card-grey, $color-card-grey),
+      url(../img/Rectangle-2.png);
+    &:hover {
+      background-image: linear-gradient($color-card-blue, $color-card-blue),
+        url(../img/Rectangle-2.png);
+    }
+  }
+  &--2 {
+    background-image: linear-gradient($color-card-grey, $color-card-grey),
+      url(../img/Rectangle-3.png);
+    &:hover {
+      background-image: linear-gradient($color-card-blue, $color-card-blue),
+        url(../img/Rectangle-3.png);
+    }
+  }
+  &--3 {
+    background-image: linear-gradient($color-card-grey, $color-card-grey),
+      url(../img/Rectangle-4.png);
+    &:hover {
+      background-image: linear-gradient($color-card-blue, $color-card-blue),
+        url(../img/Rectangle-4.png);
+    }
+  }
+  &--4 {
+    background-image: linear-gradient($color-card-grey, $color-card-grey),
+      url(../img/Rectangle-5.png);
+    &:hover {
+      background-image: linear-gradient($color-card-blue, $color-card-blue),
+        url(../img/Rectangle-5.png);
+    }
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+
+    @media only screen and (max-width: $bp-largest) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+    p {
+      margin-right: auto;
+    }
+    ion-icon {
+      visibility: visible !important;
+    }
+  }
+}
