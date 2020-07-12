@@ -1,0 +1,74 @@
+//FONT VARIABLES
+$font-primary: 'Roboto', sans-serif;
+$font-display: 'Lato', sans-serif;
+
+//COLOR VARIABLES
+$color-background: #070506;
+
+$color-primary: #fff;
+$color-secondary: #afafaf;
+
+$color-premier: #b02000;
+
+$color-btn-light: #fb641a;
+$color-btn-dark: #fc3309;
+
+$color-card-blue: rgba(64, 101, 255, 0.86);
+$color-card-grey: rgba(80, 80, 80, 0.86);
+
+//FONT size
+$default-font-size: 1.6rem;
+
+// BREAKPOINTS
+$bp-largest: 75em; //1250 px
+$bp-large: 56.25em; // 900px
+$bp-medium: 43.75em; // 700px
+$bp-small: 37.7em; // 600px
+$bp-smallest: 28.75em; // 460px
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%; //8px
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 37.5%; //6px
+  }
+}
+body {
+  font-family: $font-primary;
+  font-weight: normal;
+  line-height: 1.6;
+  color: $color-primary;
+  font-size: $default-font-size;
+
+  background-color: #010101;
+  background-image: url(../img/main-bg.png);
+  background-size: 100rem;
+  background-position: right top;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: $bp-largest) {
+    background-size: contain;
+  }
+  @media only screen and (max-width: $bp-large) {
+    background-size: 100rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 114rem;
+  padding: 8rem;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star wars</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Hamburger menu -->
+      <nav class="nav">
+        <input type="checkbox" class="nav__input" id="navi-input">
+        <label for="navi-input" class="nav__label">
+          <span class="nav__icon"></span>
+        </label>
+        <div class="nav__background">&nbsp;</div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Билеты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О фильме</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Трейлеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Отзывы</a>
+          </li>
+      </nav>
+
+
+      <header class="header u-mb-huge">
+        <img src="./img/logo.png" alt="Logo" class="header__logo" />
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Билеты</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">О фильме</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Трейлеры</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Отзывы</a>
+          </li>
+        </ul>
+      </header>
+      <main class="main">
+        <!-- INFO -->
+        <div class="info">
+          <h2 class="heading-2 u-mb-tiny">Эпизод IX</h2>
+          <h1 class="heading-1 u-mb-small">Скайуокер. Восход</h1>
+          <p class="info__text">
+            Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
+            более сорока лет, и обещает дать ответы на все загадки из предыдущих
+            серий. Зрителя ожидают старые и новые герои, уникальные миры,
+            увлекательные путешествия на край Галактики и грандиозный финал
+            фантастической саги
+          </p>
+          <p class="info__premier">Премьера</p>
+          <p class="info__date">16 декабря 2019</p>
+          <a
+            href="https://www.youtube.com/watch?v=8Qn_spdM5Zg"
+            class="btn btn--animated"
+            target="_blank"
+            >Смотреть трейлер</a
+          >
+        </div>
+
+        <!-- SLIDER BLOCK -->
+        <div class="slider">
+          <p class="slider__title">Предыдущие эпизоды</p>
+          <!-- CARD -->
+          <div class="card-container">
+            <div class="card card--1">
+              <p class="card__date">1977</p>
+              <h3 class="heading-3">Эпизод IV: Новая надежда</h3>
+              <div class="card__rate">
+                <p>Рейтинг</p>
+                <div class="card__stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card card--2">
+              <p class="card__date">1980</p>
+              <h3 class="heading-3">Эпизод V: Империя наносит ответный удар</h3>
+              <div class="card__rate">
+                <p>Рейтинг</p>
+                <div class="card__stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card card--3">
+              <p class="card__date">1983</p>
+              <h3 class="heading-3">Эпизод VI: Возвращение джедая</h3>
+              <div class="card__rate">
+                <p>Рейтинг</p>
+                <div class="card__stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card card--4">
+              <p class="card__date">1999</p>
+              <h3 class="heading-3">Эпизод I: Скрытая угроза</h3>
+              <div class="card__rate">
+                <p>Рейтинг</p>
+                <div class="card__stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__arrows">
+            <ion-icon name="arrow-back" class="arrow arrow--1"></ion-icon>
+            <ion-icon name="arrow-forward" class="arrow arrow--2"></ion-icon>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
